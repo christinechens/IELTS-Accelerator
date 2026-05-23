@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Accelerator — by Christine</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Fraunces:opsz,wght,SOFT@9..144,600..900,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Reusable SVG symbol library -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="ast" viewBox="-50 -50 100 100">
+      <g stroke="currentColor" stroke-width="22" stroke-linecap="round" fill="none">
+        <line x1="0" y1="-40" x2="0" y2="40"/>
+        <line x1="0" y1="-40" x2="0" y2="40" transform="rotate(60)"/>
+        <line x1="0" y1="-40" x2="0" y2="40" transform="rotate(120)"/>
+      </g>
+    </symbol>
+    <symbol id="ast-8" viewBox="-50 -50 100 100">
+      <g stroke="currentColor" stroke-width="18" stroke-linecap="round" fill="none">
+        <line x1="0" y1="-42" x2="0" y2="42"/>
+        <line x1="0" y1="-42" x2="0" y2="42" transform="rotate(45)"/>
+        <line x1="0" y1="-42" x2="0" y2="42" transform="rotate(90)"/>
+        <line x1="0" y1="-42" x2="0" y2="42" transform="rotate(135)"/>
+      </g>
+    </symbol>
+    <symbol id="cute-star" viewBox="-50 -50 100 100">
+      <path d="M 0,-38 L 10,-12 L 38,-10 L 16, 7 L 22, 34 L 0, 21 L -22, 34 L -16, 7 L -38,-10 L -10,-12 Z"
+            fill="currentColor" stroke="currentColor" stroke-width="11"
+            stroke-linejoin="round" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="chev-down" viewBox="0 0 24 24">
+      <path d="M 4 9 L 12 17 L 20 9" fill="none" stroke="currentColor" stroke-width="3.5"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<button id="lang-toggle" onclick="toggleLang()">🇮🇩 Bahasa</button>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <span class="float-ast a1 spin-slow"><svg><use href="#ast"/></svg></span>
+  <span class="float-ast a2 wobble"><svg><use href="#ast"/></svg></span>
+  <span class="float-ast a3 spin-rev"><svg><use href="#ast-8"/></svg></span>
+  <span class="float-ast a4 spin-med"><svg><use href="#ast"/></svg></span>
+  <span class="float-ast a5 wobble" style="animation-delay:-1s"><svg><use href="#cute-star"/></svg></span>
+  <span class="float-ast a6 spin-fast"><svg><use href="#ast"/></svg></span>
+
+  <div class="hero-grid">
+    <div class="hero-stack">
+      <div class="hero-badge">
+        <span class="ast"><svg><use href="#ast"/></svg></span>
+        <span data-en="8 weeks · 16 sessions · max 7 students" data-id="8 minggu · 16 sesi · maks 7 siswa">8 weeks · 16 sessions · max 7 students</span>
+      </div>
+
+      <h1 class="hero-h1">
+        <span class="ielts">IELTS</span>
+        <span class="inline-ast"><svg><use href="#ast"/></svg></span><br>
+        <span class="acc" data-en="Accelerator." data-id="Accelerator.">Accelerator.</span>
+      </h1>
+
+      <p class="hero-sub" data-en="Reach your target band score in 2 months. Focused strategy. Small groups. Real results. <b>Only Rp 100k/hour.</b>"
+                          data-id="Raih target skor IELTS-mu dalam 2 bulan. Strategi terarah. Kelas kecil. Hasil nyata. <b>Hanya Rp 100rb/jam.</b>">
+        Reach your target band score in 2 months. Focused strategy. Small groups. Real results. <b>Only Rp 100k/hour.</b>
+      </p>
+
+      <div class="hero-stats">
+        <span class="stat" data-en="Mon 8pm · Sat 10:30am (WIB)" data-id="Sen 20:00 · Sab 10:30 (WIB)">Mon 8pm · Sat 10:30am (WIB)</span>
+        <span class="stat" data-en="4 May – 22 Jun 2026" data-id="4 Mei – 22 Jun 2026">4 May – 22 Jun 2026</span>
+        <span class="stat" data-en="Live on Zoom" data-id="Live di Zoom">Live on Zoom</span>
+      </div>
+
+      <div class="stickers">
+        <a href="https://forms.gle/GfPT1bRhs8mve3P99" class="sticker yellow">
+          <span data-en="Register now" data-id="Daftar sekarang">Register now</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://wa.me/6287886681160" class="sticker green">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487 2.981 1.287 2.981.858 3.518.804.537-.053 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+          <span data-en="WhatsApp" data-id="WhatsApp">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-card-wrap">
+      <div class="photo-card">
+        <div class="band-chip">Band<strong>8.5</strong></div>
+        <div class="photo-frame"></div>
+        <div class="photo-caption">
+          <span data-en="Christine" data-id="Christine">Christine</span>
+          <span data-en="your coach" data-id="pengajarmu">your coach</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MARQUEE ── -->
+<div class="marquee">
+  <div class="marquee-track" id="marquee">
+    <!-- duplicated in JS at load for seamless loop -->
+    <span>STUDY ABROAD</span>
+    <span class="ast"><svg><use href="#ast"/></svg></span>
+    <span>LIVE YOUR DREAMS</span>
+    <span class="ast"><svg><use href="#cute-star"/></svg></span>
+    <span>WORK ABROAD</span>
+    <span class="ast"><svg><use href="#ast-8"/></svg></span>
+    <span>BAND 7+</span>
+    <span class="ast"><svg><use href="#ast"/></svg></span>
+    <span>STUDY ABROAD</span>
+    <span class="ast"><svg><use href="#ast"/></svg></span>
+    <span>LIVE YOUR DREAMS</span>
+    <span class="ast"><svg><use href="#cute-star"/></svg></span>
+    <span>WORK ABROAD</span>
+    <span class="ast"><svg><use href="#ast-8"/></svg></span>
+    <span>BAND 7+</span>
+    <span class="ast"><svg><use href="#ast"/></svg></span>
+  </div>
+</div>
+
+<!-- ── ABOUT ── -->
+<section id="about" class="bleed">
+  <span class="float-ast a1 spin-slow"><svg><use href="#ast"/></svg></span>
+  <span class="float-ast a2"><svg><use href="#ast"/></svg></span>
+  <span class="float-ast a3 wobble"><svg><use href="#cute-star"/></svg></span>
+
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">
+        <span class="ast"><svg><use href="#ast"/></svg></span>
+        <span data-en="Your instructor" data-id="Pengajarmu">Your instructor</span>
+      </div>
+      <h2 class="section-h">
+        <span data-en="Meet " id-en="Kenali ">Meet </span>
+        <span class="underline ielts-it">Christine.</span>
+      </h2>
+      <p class="section-intro" data-en="Cambridge International grad with an MSc from emlyon × ECNU. Two IELTS attempts, two Band 8.5s. Two years teaching IELTS — she knows exactly how to get you to your target."
+                                data-id="Lulusan Cambridge International dengan MSc dari emlyon × ECNU. Dua kali IELTS, dua kali Band 8.5. Dua tahun mengajar IELTS — dia tahu persis cara mengantarmu ke target.">
+        Cambridge International grad with an MSc from emlyon × ECNU. Two IELTS attempts, two Band 8.5s. Two years teaching IELTS — she knows exactly how to get you to your target.
+      </p>
+      <div class="credentials" style="margin-top:24px;">
+        <span class="cred">🎓 Cambridge Int'l</span>
+        <span class="cred">🏛️ MSc emlyon × ECNU</span>
+        <span class="cred">🎵 12K+ on TikTok</span>
+      </div>
+    </div>
+
+    <div class="score-stack reveal">
+      <div class="score-table">
+        <table>
+          <thead>
+            <tr>
+              <th data-en="Attempt" data-id="Percobaan">Attempt</th>
+              <th>Listen</th>
+              <th>Read</th>
+              <th>Write</th>
+              <th>Speak</th>
+              <th data-en="Overall" data-id="Total">Overall</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1st</td><td>8.5</td><td>8.5</td><td>7.5</td><td>8.5</td><td><span class="pill-score">8.5</span></td></tr>
+            <tr><td>2nd</td><td>8.0</td><td>9.0</td><td>7.5</td><td>9.0</td><td><span class="pill-score">8.5</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FIT ── -->
+<section id="fit" class="bleed">
+  <span class="float-ast a1 spin-rev"><svg><use href="#ast"/></svg></span>
+  <span class="float-ast a2 spin-slow"><svg><use href="#ast-8"/></svg></span>
+  <span class="float-ast a3 wobble"><svg><use href="#ast"/></svg></span>
+
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">
+        <span class="ast"><svg><use href="#ast"/></svg></span>
+        <span data-en="Who it's for" data-id="Untuk siapa">Who it's for</span>
+      </div>
+      <h2 class="section-h">
+        <span data-en="Is this " data-id="Apakah ini ">Is this </span>
+        <span class="accent" data-en="for you?" data-id="untukmu?">for you?</span>
+      </h2>
+    </div>
+
+    <ul class="fit-list">
+      <li class="reveal">
+        <span class="ast-bullet"><svg><use href="#ast"/></svg></span>
+        <span data-en="English level B1–B2 (intermediate to upper-intermediate)"
+              data-id="Level bahasa Inggris B1–B2 (menengah ke atas)">English level B1–B2 (intermediate to upper-intermediate)</span>
+      </li>
+      <li class="reveal">
+        <span class="ast-bullet"><svg><use href="#ast"/></svg></span>
+        <span data-en="Current IELTS 5.5 or above (or equivalent)"
+              data-id="Skor IELTS saat ini 5.5 ke atas (atau setara)">Current IELTS 5.5 or above (or equivalent)</span>
+      </li>
+      <li class="reveal">
+        <span class="ast-bullet"><svg><use href="#ast"/></svg></span>
+        <span data-en="Target score of 6.5, 7.0, or higher"
+              data-id="Target skor 6.5, 7.0, atau lebih tinggi">Target score of 6.5, 7.0, or higher</span>
+      </li>
+      <li class="reveal">
+        <span class="ast-bullet"><svg><use href="#ast"/></svg></span>
+        <span data-en="Can commit to 2 sessions per week for 2 months"
+              data-id="Bisa komitmen 2 sesi per minggu selama 2 bulan">Can commit to 2 sessions per week for 2 months</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ── CURRICULUM ── -->
+<section id="curriculum" class="bleed">
+  <span class="float-ast a1 spin-med"><svg><use href="#ast"/></svg></span>
+  <span class="float-ast a2 wobble"><svg><use href="#cute-star"/></svg></span>
+
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">
+        <span class="ast"><svg><use href="#ast"/></svg></span>
+        <span data-en="What's covered" data-id="Materi program">What's covered</span>
+      </div>
+      <h2 class="section-h">
+        <span data-en="16 sessions. " data-id="16 sesi. ">16 sessions. </span>
+        <span class="ielts-it" data-en="Every skill." data-id="Semua skill.">Every skill.</span>
+      </h2>
+    </div>
+
+    <div class="phases">
+      <div class="phase reveal">
+        <div class="num">1</div>
+        <span class="sessions" data-en="Sessions 1–12" data-id="Sesi 1–12">Sessions 1–12</span>
+        <h3 data-en="Skill Building" data-id="Skill Building">Skill Building</h3>
+        <p data-en="Deep-dive into all four IELTS skills with exam-specific strategies for every question type."
+           data-id="Mendalami keempat skill IELTS dengan strategi khusus untuk setiap tipe soal.">
+          Deep-dive into all four IELTS skills with exam-specific strategies for every question type.
+        </p>
+        <div class="skills">
+          <span>Listening</span><span>Reading</span><span>Writing</span><span>Speaking</span>
+        </div>
+      </div>
+      <div class="phase reveal">
+        <div class="num">2</div>
+        <span class="sessions" data-en="Sessions 13–15" data-id="Sesi 13–15">Sessions 13–15</span>
+        <h3 data-en="Mock Test" data-id="Mock Test">Mock Test</h3>
+        <p data-en="Full 3-hour digital mock under real exam conditions, plus technique drills and revision."
+           data-id="Mock test digital 3 jam dalam kondisi ujian nyata, plus drill teknik dan revisi.">
+          Full 3-hour digital mock under real exam conditions, plus technique drills and revision.
+        </p>
+        <div class="skills"><span>Timed</span><span>Digital</span><span>Strategy</span></div>
+      </div>
+      <div class="phase reveal">
+        <div class="num">3</div>
+        <span class="sessions" data-en="Session 16" data-id="Sesi 16">Session 16</span>
+        <h3 data-en="Feedback" data-id="Umpan Balik">Feedback</h3>
+        <p data-en="Per-skill band breakdown. Personalised notes from Christine — exactly what to fix before test day."
+           data-id="Breakdown skor per skill. Catatan personal dari Christine — apa yang perlu diperbaiki sebelum hari ujian.">
+          Per-skill band breakdown. Personalised notes from Christine — exactly what to fix before test day.
+        </p>
+        <div class="skills"><span>1-on-1</span><span>Action plan</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRICING ── -->
+<section id="pricing" class="bleed">
+  <span class="float-ast a1 spin-rev"><svg><use href="#ast"/></svg></span>
+  <span class="float-ast a2 spin-slow"><svg><use href="#ast-8"/></svg></span>
+  <span class="float-ast a3 wobble"><svg><use href="#cute-star"/></svg></span>
+
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow" style="background:var(--yellow);border-color:var(--navy);">
+        <span class="ast"><svg><use href="#ast"/></svg></span>
+        <span data-en="Investment" data-id="Investasi">Investment</span>
+      </div>
+      <h2 class="section-h" style="color:#fff;">
+        <span data-en="Simple, " data-id="Harga ">Simple, </span>
+        <span class="accent" data-en="transparent." data-id="transparan.">transparent.</span>
+      </h2>
+      <p class="section-intro" style="color:rgba(255,255,255,0.9);"
+         data-en="Early bird until 30 April. Lock your seat — only 5–7 students per cohort."
+         data-id="Early bird sampai 30 April. Amankan tempatmu — hanya 5–7 siswa per cohort.">
+        Early bird until 30 April. Lock your seat — only 5–7 students per cohort.
+      </p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="price-card featured reveal">
+        <span class="price-tag">⚡ <span data-en="Early Bird" data-id="Early Bird">Early Bird</span></span>
+        <div class="price-label" data-en="Monthly" data-id="Bulanan">Monthly</div>
+        <div class="price-amount">Rp 1.400.000<span data-en="/month" data-id="/bulan">/month</span></div>
+        <div class="price-divider"></div>
+        <div class="price-label" data-en="Pay upfront (2 mo)" data-id="Bayar di muka (2 bln)">Pay upfront (2 mo)</div>
+        <div class="price-amount" style="font-size:28px;">Rp 2.400.000</div>
+        <div class="price-save">
+          <span class="ast"><svg><use href="#ast"/></svg></span>
+          <span data-en="Save Rp 400,000" data-id="Hemat Rp 400.000">Save Rp 400,000</span>
+        </div>
+        <p class="price-note" data-en="Register before 30 April to lock this price."
+                              data-id="Daftar sebelum 30 April untuk mengunci harga ini.">
+          Register before 30 April to lock this price.
+        </p>
+      </div>
+
+      <div class="price-card normal reveal">
+        <span class="price-tag" data-en="Normal" data-id="Normal">Normal</span>
+        <div class="price-label" data-en="Monthly" data-id="Bulanan">Monthly</div>
+        <div class="price-amount">Rp 1.600.000<span data-en="/month" data-id="/bulan">/month</span></div>
+        <div class="price-divider"></div>
+        <div class="price-label" data-en="Pay upfront (2 mo)" data-id="Bayar di muka (2 bln)">Pay upfront (2 mo)</div>
+        <div class="price-amount" style="font-size:28px;">Rp 2.800.000</div>
+        <div class="price-save">
+          <span class="ast"><svg><use href="#ast"/></svg></span>
+          <span data-en="Save Rp 400,000" data-id="Hemat Rp 400.000">Save Rp 400,000</span>
+        </div>
+        <p class="price-note" data-en="Payment due before classes start."
+                              data-id="Pembayaran sebelum kelas dimulai.">
+          Payment due before classes start.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section id="faq" class="bleed">
+  <span class="float-ast a1 wobble"><svg><use href="#ast"/></svg></span>
+  <span class="float-ast a2 spin-slow"><svg><use href="#ast"/></svg></span>
+
+  <div class="container" style="max-width:780px;margin:0 auto;">
+    <div class="reveal" style="text-align:center;">
+      <div class="eyebrow">
+        <span class="ast"><svg><use href="#ast"/></svg></span>
+        <span>FAQ</span>
+      </div>
+      <h2 class="section-h">
+        <span data-en="Quick " data-id="Pertanyaan ">Quick </span>
+        <span class="ielts-it" data-en="answers." data-id="umum.">answers.</span>
+      </h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <div class="faq-q">
+          <span data-en="Do I need IELTS experience to join?" data-id="Apakah saya harus pernah IELTS?">Do I need IELTS experience to join?</span>
+          <span class="toggle"><svg><use href="#chev-down"/></svg></span>
+        </div>
+        <div class="faq-a" data-en="No — but you should be around B1–B2 and aiming for 6.5+. A short diagnostic before the cohort confirms you're in the right place."
+                          data-id="Tidak — tapi sebaiknya kamu sudah di level B1–B2 dan menargetkan 6.5 ke atas. Ada tes diagnostik singkat sebelum cohort dimulai.">
+          No — but you should be around B1–B2 and aiming for 6.5+. A short diagnostic before the cohort confirms you're in the right place.
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">
+          <span data-en="What platform are classes on?" data-id="Kelas di platform apa?">What platform are classes on?</span>
+          <span class="toggle"><svg><use href="#chev-down"/></svg></span>
+        </div>
+        <div class="faq-a" data-en="All sessions are live on Zoom."
+                          data-id="Semua sesi live di Zoom.">
+          All sessions are live on Zoom.
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">
+          <span data-en="What if I miss a class?" data-id="Kalau saya tidak bisa hadir?">What if I miss a class?</span>
+          <span class="toggle"><svg><use href="#chev-down"/></svg></span>
+        </div>
+        <div class="faq-a" data-en="Sessions won't be rescheduled — it's a group program. You'll get the full schedule upfront so you can plan around it."
+                          data-id="Sesi tidak dijadwal ulang — ini kelas kelompok. Jadwal lengkap diberikan dari awal agar kamu bisa mengatur waktumu.">
+          Sessions won't be rescheduled — it's a group program. You'll get the full schedule upfront so you can plan around it.
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">
+          <span data-en="When do I pay for Month 2?" data-id="Kapan bayar bulan ke-2?">When do I pay for Month 2?</span>
+          <span class="toggle"><svg><use href="#chev-down"/></svg></span>
+        </div>
+        <div class="faq-a" data-en="By end of Week 3 (around 25 May). It locks your seat for the second half of the program."
+                          data-id="Akhir minggu ke-3 (sekitar 25 Mei). Ini mengamankan tempatmu untuk paruh kedua program.">
+          By end of Week 3 (around 25 May). It locks your seat for the second half of the program.
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">
+          <span data-en="Is the mock test digital or paper?" data-id="Mock test digital atau kertas?">Is the mock test digital or paper?</span>
+          <span class="toggle"><svg><use href="#chev-down"/></svg></span>
+        </div>
+        <div class="faq-a" data-en="Fully digital and timed. Speaking happens live, 1-on-1 with Christine."
+                          data-id="Sepenuhnya digital dan terukur waktu. Speaking dilakukan langsung 1-on-1 dengan Christine.">
+          Fully digital and timed. Speaking happens live, 1-on-1 with Christine.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section id="cta">
+  <span class="float-ast a1 spin-slow"><svg><use href="#ast"/></svg></span>
+  <span class="float-ast a2 spin-rev"><svg><use href="#ast-8"/></svg></span>
+  <span class="float-ast a3 wobble"><svg><use href="#cute-star"/></svg></span>
+  <span class="float-ast a4 spin-fast"><svg><use href="#ast"/></svg></span>
+  <span class="float-ast a5"><svg><use href="#ast"/></svg></span>
+  <span class="float-ast a6 wobble" style="animation-delay:-2s"><svg><use href="#cute-star"/></svg></span>
+
+  <h2>
+    <span data-en="Ready to" data-id="Siap raih">Ready to</span><br>
+    <span class="red" data-en="hit your" data-id="target">hit your</span>
+    <span class="yel" data-en="target?" data-id="skormu?">target?</span>
+  </h2>
+  <p class="ctasub" data-en="Min 5 students. Max 7. Early bird closes 30 April." data-id="Min 5 siswa. Maks 7. Early bird tutup 30 April.">
+    Min 5 students. Max 7. Early bird closes 30 April.
+  </p>
+  <div class="stickers">
+    <a href="https://forms.gle/GfPT1bRhs8mve3P99" class="sticker yellow">
+      <span data-en="Register now" data-id="Daftar sekarang">Register now</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <a href="https://wa.me/6287886681160" class="sticker green">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487 2.981 1.287 2.981.858 3.518.804.537-.053 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+      <span data-en="Ask on WhatsApp" data-id="Tanya WhatsApp">Ask on WhatsApp</span>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Christine IELTS · <a href="https://tiktok.com/@christine.ielts">@christine.ielts</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
