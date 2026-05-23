@@ -25,9 +25,7 @@ const COHORT = {
     id: "Akhir minggu ke-3 (sekitar 25 Mei). Ini mengamankan tempatmu untuk paruh kedua program."
   },
 
-  earlyBirdMonthly: "Rp 1.400.000",
   earlyBirdUpfront: "Rp 2.400.000",
-  normalMonthly:    "Rp 1.600.000",
   normalUpfront:    "Rp 2.800.000",
 
   registerLink: "https://forms.gle/GfPT1bRhs8mve3P99",
