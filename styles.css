@@ -542,7 +542,7 @@
   .price-card.normal .price-tag { background: #fff; color: var(--navy); }
   .price-label { font: 700 14px/1 'Poppins',sans-serif; color: var(--muted); margin-top: 10px; }
   .price-amount {
-    font: 900 56px/1 'Fraunces', serif;
+    font: 900 48px/1 'Fraunces', serif;
     margin-top: 6px;
     letter-spacing: -2px;
   }
