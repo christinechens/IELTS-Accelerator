@@ -212,6 +212,14 @@
   .sticker:hover  { transform: translate(-2px,-2px); box-shadow: 8px 8px 0 var(--navy); }
   .sticker.green:hover { box-shadow: 8px 8px 0 #0a4d23; }
   .sticker:active { transform: translate(3px,3px); box-shadow: 2px 2px 0 var(--navy); }
+  .sticker.greyed {
+    background: #aaa; color: #fff;
+    border-color: #777;
+    box-shadow: 6px 6px 0 #777;
+    pointer-events: none;
+    opacity: 0.6;
+  }
+  .sticker.greyed:hover { transform: none; box-shadow: 6px 6px 0 #777; }
 
   /* Hero right column — Christine card + rotating disk */
   .hero-card-wrap {

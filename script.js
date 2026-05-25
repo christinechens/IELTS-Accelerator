@@ -42,6 +42,11 @@ function applyConfig() {
   const note = document.getElementById('coming-soon-note');
   if (note) note.style.display = COHORT.comingSoon ? 'flex' : 'none';
 
+  // Grey out register buttons when coming soon
+  document.querySelectorAll('[data-config-href="registerLink"]').forEach(el => {
+    el.classList.toggle('greyed', COHORT.comingSoon);
+  });
+
   // Bilingual text — sets data-en/data-id so lang toggle still works
   document.querySelectorAll('[data-config]').forEach(el => {
     const val = COHORT[el.dataset.config];
