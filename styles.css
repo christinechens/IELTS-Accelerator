@@ -123,6 +123,43 @@
     vertical-align: 0.18em;
     margin: 0 6px;
   }
+  /* ── COMING SOON STICKY NOTE ── */
+  .hero-h1-wrap { position: relative; display: inline-block; }
+  #coming-soon-note {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    background: #fff9a3;
+    padding: 20px 26px 18px;
+    transform: rotate(-4deg);
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.15), 8px 12px 24px rgba(0,0,0,0.22);
+    z-index: 10;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 260px;
+    border-radius: 2px;
+  }
+  #coming-soon-note::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 6px;
+    background: rgba(0,0,0,0.06);
+    border-radius: 2px 2px 0 0;
+  }
+  #coming-soon-note span {
+    font: 800 12px/1 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: var(--navy);
+    opacity: 0.7;
+  }
+  #coming-soon-note strong {
+    font: 900 38px/1 'Fraunces', serif;
+    color: var(--navy);
+    letter-spacing: -1px;
+  }
+
   .hero-sub {
     margin-top: 28px;
     font-size: 18px;

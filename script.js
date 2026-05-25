@@ -1,28 +1,32 @@
 // ── COHORT CONFIG — only edit this section for each new intake ────────────
 const COHORT = {
+  // ── Toggle between states ──
+  comingSoon: true,          // true = show "Coming Soon" sticky note
+  comingSoonDates: { en: "Jul 5 – Aug 30", id: "5 Jul – 30 Agt" },
+
   schedule: {
-    en: "Mon 8pm · Sat 10:30am (WIB)",
-    id: "Sen 20:00 · Sab 10:30 (WIB)"
+    en: "Cohort A: Mon 8:00pm · Sat 10:30am (WIB) Cohort B: Thu 8pm · Sun 8:00pm (WIB)",
+    id: "Kohort A: Senin pukul 20.00 · Sabtu pukul 10.30 (WIB) Kohort B: Kamis pukul 20.00 · Minggu pukul 20.00 (WIB)"
   },
   dates: {
-    en: "4 May – 22 Jun 2026",
-    id: "4 Mei – 22 Jun 2026"
+    en: "5 Jul – 30 Aug 2026",
+    id: "5 Jul – 30 Aug 2026"
   },
   pricingIntro: {
-    en: "Early bird until 30 April. Lock your seat — only 5–7 students per cohort.",
-    id: "Early bird sampai 30 April. Amankan tempatmu — hanya 5–7 siswa per cohort."
+    en: "Early bird until 31 July. Lock your seat — only 5–7 students per cohort.",
+    id: "Early bird sampai 31 Juli. Amankan tempatmu — hanya 5–7 siswa per cohort."
   },
   earlyBirdNote: {
-    en: "Register before 30 April to lock this price.",
-    id: "Daftar sebelum 30 April untuk mengunci harga ini."
+    en: "Register before 31 July to lock this price.",
+    id: "Daftar sebelum 31 Juli untuk mengunci harga ini."
   },
   ctaSub: {
-    en: "Min 5 students. Max 7. Early bird closes 30 April.",
-    id: "Min 5 siswa. Maks 7. Early bird tutup 30 April."
+    en: "Min 5 students. Max 7. Early bird closes 31 July.",
+    id: "Min 5 siswa. Maks 7. Early bird tutup 31 Juli."
   },
   month2Payment: {
-    en: "By end of Week 3 (around 25 May). It locks your seat for the second half of the program.",
-    id: "Akhir minggu ke-3 (sekitar 25 Mei). Ini mengamankan tempatmu untuk paruh kedua program."
+    en: "By end of Week 3. It locks your seat for the second half of the program.",
+    id: "Akhir minggu ke-3. Ini mengamankan tempatmu untuk paruh kedua program."
   },
 
   earlyBirdUpfront: "Rp 2.400.000",
@@ -34,6 +38,10 @@ const COHORT = {
 // ──────────────────────────────────────────────────────────────────────────
 
 function applyConfig() {
+  // Coming soon state
+  const note = document.getElementById('coming-soon-note');
+  if (note) note.style.display = COHORT.comingSoon ? 'flex' : 'none';
+
   // Bilingual text — sets data-en/data-id so lang toggle still works
   document.querySelectorAll('[data-config]').forEach(el => {
     const val = COHORT[el.dataset.config];
