@@ -13,16 +13,16 @@ const COHORT = {
     id: "5 Jul – 30 Aug 2026"
   },
   pricingIntro: {
-    en: "Early bird until 31 July. Lock your seat — only 5–7 students per cohort.",
-    id: "Early bird sampai 31 Juli. Amankan tempatmu — hanya 5–7 siswa per cohort."
+    en: "Early bird until 30 June. Lock your seat — only 5–7 students per cohort.",
+    id: "Early bird sampai 30 Juni. Amankan tempatmu — hanya 5–7 siswa per cohort."
   },
   earlyBirdNote: {
-    en: "Register before 31 July to lock this price.",
-    id: "Daftar sebelum 31 Juli untuk mengunci harga ini."
+    en: "Register before 30 June to lock this price.",
+    id: "Daftar sebelum 30 Juni untuk mengunci harga ini."
   },
   ctaSub: {
-    en: "Min 5 students. Max 7. Early bird closes 31 July.",
-    id: "Min 5 siswa. Maks 7. Early bird tutup 31 Juli."
+    en: "Min 5 students. Max 7. Early bird closes 30 June.",
+    id: "Min 5 siswa. Maks 7. Early bird tutup 30 Juni."
   },
   month2Payment: {
     en: "By end of Week 3. It locks your seat for the second half of the program.",
