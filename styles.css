@@ -538,6 +538,7 @@
 
   /* ── PRICING ── */
   #pricing { background: var(--red); color: #fff; }
+  #pricing .container { position: relative; z-index: 2; }
   #pricing .a1 { top: 56px; left: 56px; width: 86px; height: 86px; color: var(--yellow); }
   #pricing .a2 { bottom: 76px; right: 60px; width: 100px; height: 100px; color: var(--navy); }
   #pricing .a3 { top: 40%; right: 4%; width: 40px; height: 40px; color: var(--yellow); opacity: .7;}
