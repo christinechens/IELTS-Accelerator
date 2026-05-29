@@ -706,6 +706,7 @@
       flex-direction: column;
     }
 
+    .hero-card-wrap { display: none; }
     #about .section-intro { font-size: 15px; max-width: 100%; }
     .score-table { transform: none; }
     .score-table table { font-size: 12px; }
