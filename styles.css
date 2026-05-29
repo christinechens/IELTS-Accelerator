@@ -128,9 +128,9 @@
   #coming-soon-note {
     display: none;
     position: absolute;
-    top: 50%;
-    left: calc(100% + 40px);
-    transform: translateY(-50%) rotate(-4deg);
+    top: 0px;
+    left: calc(100% - 60px);
+    transform: rotate(-4deg);
     background: #fff9a3;
     padding: 20px 26px 18px;
     box-shadow: 4px 4px 0 rgba(0,0,0,0.15), 8px 12px 24px rgba(0,0,0,0.22);
