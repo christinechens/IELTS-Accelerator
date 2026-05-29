@@ -694,6 +694,17 @@
     .pricing-grid { grid-template-columns: 1fr; }
     #about .container { grid-template-columns: 1fr; gap: 40px; }
     #cta { padding: 100px 28px 120px; }
+
+    #coming-soon-note {
+      position: static;
+      transform: rotate(-2deg);
+      margin-top: 16px;
+      align-self: flex-start;
+    }
+    .hero-h1-wrap {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   /* Scroll-in animation */
