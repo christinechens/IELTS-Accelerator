@@ -2,7 +2,7 @@
 const COHORT = {
   // ── Toggle between states ──
   comingSoon: true,          // true = show "Coming Soon" sticky note
-  comingSoonDates: { en: "1 June", id: "1 Juni" },
+  comingSoonDates: { en: "Jul 5 – Aug 30", id: "5 Jul – 30 Agt" },
 
   schedule: {
     en: "Cohort A: Mon 8:00pm · Sat 10:30am (WIB) Cohort B: Thu 8pm · Sun 8:00pm (WIB)",
