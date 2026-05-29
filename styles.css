@@ -240,26 +240,9 @@
   .photo-frame {
     aspect-ratio: 1 / 1.05;
     border-radius: 16px;
-    background:
-      radial-gradient(circle at 50% 38%, #FFD9A8 0%, #F4A87A 55%, #C16B40 100%);
+    background: url('christine.jpg') center top / cover no-repeat;
     position: relative;
     overflow: hidden;
-  }
-  /* Stylized "Christine" silhouette in the polaroid */
-  .photo-frame::before {
-    content: '';
-    position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);
-    width: 70%; height: 70%;
-    background: var(--navy);
-    border-radius: 50% 50% 12% 12% / 60% 60% 12% 12%;
-  }
-  .photo-frame::after {
-    content: '';
-    position: absolute; left: 50%; top: 18%; transform: translateX(-50%);
-    width: 36%; aspect-ratio: 1;
-    background: #FFD9A8;
-    border-radius: 50%;
-    border: 4px solid #C16B40;
   }
   .photo-caption {
     font: 800 18px/1.1 'Fraunces', serif;
